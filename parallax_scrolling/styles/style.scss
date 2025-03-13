@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+// 點擊後滑動到特定div 滑順
+html{
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.all_width{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+img{
+  width: 100%;
+}
+
+// -----以上是我的css_reset我的css_reset-----
+
+body {
+  margin: 0;
+  background-color: white; // 頁面預設白色 /
+}
+
+.content {
+    height: 100vh; // 這是普通的內容區塊，保持白色 /
+    background-color: white;
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh; // 視差區塊的高度 /
+    overflow: hidden; // 確保背景不會超出 /
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img.jpg");
+  background-size: cover;
+  background-position: center 0; /* 初始位置 */
+  background-attachment: fixed; /* 讓背景不跟著滾動 */
+}
+
+// 方案二
+/* .parallax-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("your-image.jpg");
+  background-size: cover;
+  background-position: center;
+} */
